@@ -5,9 +5,9 @@
 
 ---
 
-### Name: 
-### Student Id: 
-### Email: 
+### Name: Caroline Smith
+### Student Id: 21072056
+### Email: casmithaa@connect.ust.hk
 
 ---
 
