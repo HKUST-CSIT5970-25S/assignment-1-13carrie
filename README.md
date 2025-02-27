@@ -37,7 +37,8 @@ I selected the Phoronix Test Suite tool. For CPU benchmarking, I have chosen to 
         3: Test All Options
 
 
-Due to the limited processing power of the VMs, I tested the Copy and Add operations with both Integer and Floating-Point values. This allowed for testing of both read and write capabilities.
+Due to the limited processing power of the VMs, I tested the Copy and Add operations with both Integer and Floating-Point values. This allowed for testing of both read and write capabilities. The final number which I have put in the table below represents the average of the four values (Add-Integer, Add-FP, Copy-Integer, and Copy-FP); each test-datatype value
+ is itself an average of three trials.
 
 2. (1 mark) Run your measurement tool on general purpose `t2.micro`, `t2.medium`, and `c5d.large` Linux instances, respectively, and find the performance differences among these instances. Launch all the instances in the **US East (N. Virginia)** region. Does the performance of EC2 instances increase commensurate with the increase of the number of vCPUs and memory resource?
 
@@ -45,9 +46,9 @@ Due to the limited processing power of the VMs, I tested the Copy and Add operat
 
     | Size        | CPU performance / MFLOPS | Memory performance / dec. megabytes per second |
     | ----------- | --------------- | ------------------ |
-    | `t2.micro` |   3106.6    |     |
-    | `t2.medium`  |  3069.3    |     |
-    | `c5d.large` |   2772.5    |     |
+    | `t2.micro` |   3106.6    | 10519.7  |
+    | `t2.medium`  |  3069.3    | 19882.9  |
+    | `c5d.large` |   2772.5    |  13892.6   |
 
     > Region: US East (N. Virginia). Use `Ubuntu Server 22.04 LTS (HVM)` as AMI.
 
