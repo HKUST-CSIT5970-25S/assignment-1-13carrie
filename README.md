@@ -58,12 +58,12 @@ Due to the limited processing power of the VMs, I tested the Copy and Add operat
 
     | Type                      | TCP b/w (Mbps) | RTT (ms) |
     | ------------------------- | -------------- | -------- |
-    | `t3.medium` - `t3.medium` |                |          |
-    | `m5.large` - `m5.large`   |                |          |
-    | `c5n.large` - `c5n.large` |                |          |
-    | `t3.medium` - `c5n.large` |                |          |
-    | `m5.large` - `c5n.large`  |                |          |
-    | `m5.large` - `t3.medium`  |                |          |
+    | `t3.medium` - `t3.medium` | 3560  | 0.342  |
+    | `m5.large` - `m5.large`   | 4950  | 0.170  |
+    | `c5n.large` - `c5n.large` | 4960  | 0.148  |
+    | `t3.medium` - `c5n.large` | 2240  | 0.701  |
+    | `m5.large` - `c5n.large`  | 4960  | 0.154  |
+    | `m5.large` - `t3.medium`  | 2600  | 0.640  |
 
     > Region: US East (N. Virginia). Use `Ubuntu Server 22.04 LTS (HVM)` as AMI. Note: Use private IP address when using iPerf within the same region. You'll need iPerf for measuring TCP bandwidth and Ping for measuring Round-Trip time.
 
@@ -71,8 +71,8 @@ Due to the limited processing power of the VMs, I tested the Copy and Add operat
 
     | Connection                | TCP b/w (Mbps) | RTT (ms) |
     | ------------------------- | -------------- | -------- |
-    | N. Virginia - Oregon      |                |          |
-    | N. Virginia - N. Virginia |                |          |
-    | Oregon - Oregon           |                |          |
+    | N. Virginia - Oregon      | 3270  | 60.588  |
+    | N. Virginia - N. Virginia | 4960  | 0.148  |
+    | Oregon - Oregon           | 4950  | 0.138  |
  
     > Region: US East (N. Virginia), US West (Oregon). Use `Ubuntu Server 22.04 LTS (HVM)` as AMI. All instances are `c5.large`. Note: Use public IP address when using iPerf within the same region.
